@@ -75,6 +75,15 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+	    <plugin>
+	        <groupId>org.apache.felix</groupId>
+	        <artifactId>maven-bundle-plugin</artifactId>
+	        <configuration>
+	            <instructions>
+		        <Export-Package>com.tinkerpop.pipes.*</Export-Package>
+	            </instructions>
+	        </configuration>
+	  </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.2-beta-4</version>
